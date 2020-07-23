@@ -6,13 +6,13 @@
 [![Build Status](https://travis-ci.org/openapitools/openapi-generator-cli.svg?branch=master)](https://travis-ci.org/OpenAPITools/openapi-generator-cli)
 [![HitCount](http://hits.dwyl.io/openapitools/openapi-generator-cli.svg)](http://hits.dwyl.com/openapitools/openapi-generator-cli)
 
-OpenAPI Generator allows generation of API client libraries (SDK generation), server stubs, documentation and 
+OpenAPI Generator allows generation of API client libraries (SDK generation), server stubs, documentation and
 configuration automatically given an OpenAPI Spec (both 2.0 and 3.0 are supported). Please see
 [OpenAPITools/openapi-generator](https://github.com/OpenAPITools/openapi-generator)
 
 ---
 
-This project checks the [maven repository](https://mvnrepository.com/artifact/org.openapitools/openapi-generator-cli) 
+This project checks the [maven repository](https://mvnrepository.com/artifact/org.openapitools/openapi-generator-cli)
 once a day for a new version and will publish this new version automatically as an npm package.
 
 **Thanks [openapitools.org](https://openapitools.org) for this awesome CLI!**
@@ -23,7 +23,7 @@ There are several ways to install the package.
 
 #### Global Mode
 
-In global mode (ie, with -g or --global appended to the command), it installs the package as a global package. This 
+In global mode (ie, with -g or --global appended to the command), it installs the package as a global package. This
 means that you'll get the `openapi-generator` command available on your command line interface (CLI) as well.
 
 ```sh
@@ -61,22 +61,9 @@ After the installation has finished you can add a script like this:
   "name": "my-cool-package",
   "version": "0.0.0",
   "scripts": {
-    "my-awesome-script-name": "openapi-generator generate -i docs/openapi.yaml -g typescript-angular -o generated-sources/openapi --additional-properties=ngVersion=6.1.7,npmName=restClient,supportsES6=true,npmVersion=6.9.0,withInterfaces=true",
+    "my-awesome-script-name": "openapi-generator generate -i docs/openapi.yaml -g typescript-angular -o generated-sources/openapi --additional-properties=\"ngVersion=6.1.7\""
   }
 }
-```
-Note the whitespace sensitivity when using mulitiple additional-properties.
-
-## Usage Example
-
-Mac/Linux:
-```
-openapi-generator generate -g ruby -i https://raw.githubusercontent.com/OpenAPITools/openapi-generator/master/modules/openapi-generator/src/test/resources/3_0/petstore.yaml -o /var/tmp/ruby-client
-```
-
-Windows:
-```
-openapi-generator generate -g ruby -i https://raw.githubusercontent.com/OpenAPITools/openapi-generator/master/modules/openapi-generator/src/test/resources/3_0/petstore.yaml -o C:\temp\ruby-client
 ```
 
 ## Further Documentation
